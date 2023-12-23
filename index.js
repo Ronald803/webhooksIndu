@@ -23,26 +23,47 @@ client.on('message',message=>{
   const totalAmount1000 = message._data.totalAmount1000//si el tipo de mensaje es 'order' este es el precio de lo que se ordeno multiplicado por 1000
   const totalCurrencyCode = message._data.totalCurrencyCode//si el tipo de mensaje es 'order' este es el tipo de moneda en este caso bolivianos
 
-  console.log({typeMessage},{bodyMessage},{notifyNameMessage},{remoteMessageNumber},{orderTitle},{itemCount},{totalAmount1000},{totalCurrencyCode});
-  console.log(message);
+  //console.log({typeMessage},{bodyMessage},{notifyNameMessage},{remoteMessageNumber},{orderTitle},{itemCount},{totalAmount1000},{totalCurrencyCode});
+  //console.log(message);
   if(isThisWordInTheString("hola",message.body)){
-    client.sendMessage(message.from, 'Hola!😄 Somos Academia Prometeo. Te comparto las siguientes opciones de interes sobre la Academia');
-    client.sendMessage(message.from, '1. Libro *Medicina* 👈');
-    client.sendMessage(message.from, '2. Libro *Matematica* 👈');
-    client.sendMessage(message.from, '3. Tarjetas *Terminología* Médica 👈');
-    client.sendMessage(message.from, 'Escribe la opción de tu interes, ejemplo: "Medicina"');    
+    const imageUrl= 'https://scontent.flpb1-1.fna.fbcdn.net/v/t39.30808-6/314066700_184596134092273_650221308378870268_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=-ooihRuIztMAX_Z2ilw&_nc_ht=scontent.flpb1-1.fna&oh=00_AfDVOKaAeQ2bT-aioyVrXc_xGqRrCbNwWCmdp_yxOGU73A&oe=658B88CE'
+    MessageMedia.fromUrl(imageUrl).then((media) => {
+      const messageText = new MessageMedia(media.mimetype, media.data, media.filename);
+      client.sendMessage(message.from, messageText);
+      setTimeout(()=>{
+        client.sendMessage(message.from, 'Hola!😄 Somos Academia Prometeo. Te comparto las siguientes opciones de interes sobre la Academia\n1. Libro *Medicina* 👈\n2. Libro *Matematica* 👈\n3. Tarjetas *Terminología* Médica 👈\nEscribe la opción de tu interes, ejemplo: "Medicina"');      
+      },1500)
+    })
   }
   if(isThisWordInTheString("medicina",message.body)){
-    client.sendMessage(message.from, '*Libro 1000 MED*')
-    client.sendMessage(message.from, 'Este material es un banco de preguntas y problemas típicos de: - biología - anatomía - lenguaje - matemáticas - física - química Con todos los distintos temas incluidos en las guías otorgadas para el ingreso a la facultad de Medicina y Tecnología Médica. *Costo*: 30 BS');
+    const imageUrl= 'https://scontent.flpb1-2.fna.fbcdn.net/v/t39.30808-6/259761621_471628654611604_161293813508830690_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=3635dc&_nc_ohc=ci7MpUXtMf8AX-gu3qa&_nc_ht=scontent.flpb1-2.fna&oh=00_AfC3wb-v0IuzDEOIriK5_ZXhtvTT4N8NFR6N48wTpH5_0Q&oe=658D2C6A'
+    MessageMedia.fromUrl(imageUrl).then((media) => {
+      const messageText = new MessageMedia(media.mimetype, media.data, media.filename);
+      client.sendMessage(message.from, messageText);
+      setTimeout(()=>{
+        client.sendMessage(message.from, '*Libro 1000 MED*\nEste material es un banco de preguntas y problemas típicos de:\n🔹 Biología\n🔹 Anatomía\n🔹 Lenguaje\n🔹 Matemáticas\n🔹 Física\n🔹 Química\nCon todos los distintos temas incluidos en las guías otorgadas para el ingreso a la facultad de Medicina y Tecnología Médica.\n*Costo*: 30 BS');  
+      },1500)
+    })
   }
   if(isThisWordInTheString("matematica",message.body)){
-    client.sendMessage(message.from, '*Libro Matemática Preuniversitaria*')
-    client.sendMessage(message.from, 'Prepárate para ingresar a: Facultad de Ciencias Económicas y Financieras  🔹Facultad de Ingeniería 🔹Facultad de Tecnología 🔹Facultad de Medicina     Consta de todos los contenidos que se consideran en las pruebas de suficiencia académica. ❗️❗️ Teoría y práctica  ❗️❗️ Ejercicios resueltos de exámenes pasados ❗️❗️ Más de 900 ejercicios propuestos. *Costo*: 25 Bs ');
+    const imageUrl= 'https://scontent.flpb1-1.fna.fbcdn.net/v/t39.30808-6/395709236_343795784838973_1425221449254092112_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_ohc=vR5mV42FL2YAX8G58cn&_nc_ht=scontent.flpb1-1.fna&oh=00_AfCmyORyhD_ME3Yi0oAr3J78p4CgRmfc47EcafWHcaW_Tg&oe=658CA07A'
+    MessageMedia.fromUrl(imageUrl).then((media) => {
+      const messageText = new MessageMedia(media.mimetype, media.data, media.filename);
+      client.sendMessage(message.from, messageText);
+      setTimeout(()=>{
+        client.sendMessage(message.from, '*Libro Matemática Preuniversitaria*\nPrepárate para ingresar a:\n🔹Facultad de Ciencias Económicas y Financieras\n🔹Facultad de Ingeniería\n🔹Facultad de Tecnología\n🔹Facultad de Medicina\nConsta de todos los contenidos que se consideran en las pruebas de suficiencia académica.\n❗️ Teoría y práctica \n❗️ Ejercicios resueltos de exámenes pasados\n❗️ Más de 900 ejercicios propuestos.\n*Costo*: 25 Bs ');  
+      },1500)
+    })
   }
   if(isThisWordInTheString("terminologia",message.body)){
-    client.sendMessage(message.from, '*Tarjetas de Terminología Médica*')
-    client.sendMessage(message.from, 'Son más de 100 tarjetas con los prefijos, sufijos y raíces de terminología médica que preguntan en el examen de ingreso a la facultad de medicina, enfermería, tecnología médica nutrición y dietética. Cada ficha tiene el prefijo sufijo raíz su significado, una imagen para asociar el significado, y un respectivo ejemplo de uso. *Costo*: 20 Bs.');
+    const imageUrl= 'https://scontent.flpb1-1.fna.fbcdn.net/v/t39.30808-6/378341935_319789067239645_5794247176949376298_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=g9A3TRExbvgAX_xkPmH&_nc_ht=scontent.flpb1-1.fna&oh=00_AfCiZZTAAUYspq3r1E6EkRKPSg7hjdTgRem6cPYGjzEpwA&oe=658BC039'
+    MessageMedia.fromUrl(imageUrl).then((media) => {
+      const messageText = new MessageMedia(media.mimetype, media.data, media.filename);
+      client.sendMessage(message.from, messageText);
+      setTimeout(()=>{
+        client.sendMessage(message.from, '*Tarjetas de Terminología Médica*\nSon más de 100 tarjetas con los prefijos, sufijos y raíces de terminología médica que preguntan en el examen de ingreso a la facultad de medicina, enfermería, tecnología médica nutrición y dietética.\nCada ficha tiene el prefijo sufijo raíz su significado, una imagen para asociar el significado, y un respectivo ejemplo de uso.\n*Costo*: 20 Bs.');  
+      },1500)
+    })
   }
   if(isThisWordInTheString("adios",message.body )){
     client.sendMessage(message.from, 'Que tengas un resto de jornada agradable.');
