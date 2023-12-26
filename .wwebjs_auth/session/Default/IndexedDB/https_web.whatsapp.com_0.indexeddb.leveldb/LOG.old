@@ -1,15 +1,41 @@
-2023/12/23-18:55:26.716 2ad0 Reusing MANIFEST C:\Users\sanan\OneDrive\Documentos\web-dev\pino-flash-osso\webhooksIndu\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/12/23-18:55:26.717 2ad0 Recovering log #191
-2023/12/23-18:55:26.805 2ad0 Reusing old log C:\Users\sanan\OneDrive\Documentos\web-dev\pino-flash-osso\webhooksIndu\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000191.log 
-2023/12/23-18:56:14.531 35a4 Level-0 table #201: started
-2023/12/23-18:56:14.557 35a4 Level-0 table #201: 1511442 bytes OK
-2023/12/23-18:56:14.558 35a4 Delete type=0 #191
-2023/12/23-18:56:15.413 35a4 Compacting 1@1 + 6@2 files
-2023/12/23-18:56:15.477 35a4 Generated table #202@1: 56441 keys, 2249713 bytes
-2023/12/23-18:56:15.489 35a4 Generated table #203@1: 1263 keys, 2131122 bytes
-2023/12/23-18:56:15.509 35a4 Generated table #204@1: 7028 keys, 2160351 bytes
-2023/12/23-18:56:15.541 35a4 Generated table #205@1: 18773 keys, 2179198 bytes
-2023/12/23-18:56:15.604 35a4 Generated table #206@1: 97320 keys, 2247594 bytes
-2023/12/23-18:56:15.652 35a4 Generated table #207@1: 48826 keys, 1162285 bytes
-2023/12/23-18:56:15.652 35a4 Compacted 1@1 + 6@2 files => 12130263 bytes
-2023/12/23-18:56:15.652 35a4 compacted to: files[ 0 0 6 0 0 0 0 ]
+2023/12/25-23:49:51.550 4ef4 Reusing MANIFEST C:\Users\sanan\OneDrive\Documentos\web-dev\pino-flash-osso\webhooksIndu\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/12/25-23:49:51.551 4ef4 Recovering log #200
+2023/12/25-23:49:51.626 4ef4 Reusing old log C:\Users\sanan\OneDrive\Documentos\web-dev\pino-flash-osso\webhooksIndu\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000200.log 
+2023/12/25-23:50:11.261 4498 Level-0 table #210: started
+2023/12/25-23:50:11.283 4498 Level-0 table #210: 1386192 bytes OK
+2023/12/25-23:50:11.284 4498 Delete type=0 #200
+2023/12/25-23:50:11.299 4498 Compacting 1@1 + 6@2 files
+2023/12/25-23:50:11.399 4498 Generated table #211@1: 61282 keys, 2268410 bytes
+2023/12/25-23:50:11.428 4498 Generated table #212@1: 1263 keys, 2130626 bytes
+2023/12/25-23:50:11.468 4498 Generated table #213@1: 4122 keys, 2150128 bytes
+2023/12/25-23:50:11.547 4498 Generated table #214@1: 18422 keys, 2186241 bytes
+2023/12/25-23:50:11.650 4498 Generated table #215@1: 90636 keys, 2236646 bytes
+2023/12/25-23:50:11.723 4498 Generated table #216@1: 57222 keys, 1360305 bytes
+2023/12/25-23:50:11.723 4498 Compacted 1@1 + 6@2 files => 12332356 bytes
+2023/12/25-23:50:11.723 4498 compacted to: files[ 0 0 6 0 0 0 0 ]
+2023/12/25-23:51:33.900 3648 Level-0 table #218: started
+2023/12/25-23:51:33.927 3648 Level-0 table #218: 1373932 bytes OK
+2023/12/25-23:51:33.928 3648 Delete type=2 #202
+2023/12/25-23:51:33.928 3648 Delete type=2 #203
+2023/12/25-23:51:33.928 3648 Delete type=2 #204
+2023/12/25-23:51:33.928 3648 Delete type=2 #205
+2023/12/25-23:51:33.928 3648 Delete type=2 #206
+2023/12/25-23:51:33.929 3648 Delete type=2 #207
+2023/12/25-23:51:33.929 3648 Delete type=0 #209
+2023/12/25-23:51:33.929 3648 Delete type=2 #210
+2023/12/25-23:51:35.232 2584 Compacting 1@1 + 6@2 files
+2023/12/25-23:51:35.338 2584 Generated table #219@1: 60506 keys, 2268267 bytes
+2023/12/25-23:51:35.353 2584 Generated table #220@1: 1260 keys, 2134852 bytes
+2023/12/25-23:51:35.372 2584 Generated table #221@1: 2540 keys, 2145830 bytes
+2023/12/25-23:51:35.430 2584 Generated table #222@1: 22401 keys, 2193110 bytes
+2023/12/25-23:51:35.508 2584 Generated table #223@1: 84611 keys, 2230354 bytes
+2023/12/25-23:51:35.562 2584 Generated table #224@1: 64389 keys, 1527325 bytes
+2023/12/25-23:51:35.562 2584 Compacted 1@1 + 6@2 files => 12499738 bytes
+2023/12/25-23:51:35.563 2584 compacted to: files[ 0 0 6 0 0 0 0 ]
+2023/12/25-23:51:35.563 2584 Delete type=2 #211
+2023/12/25-23:51:35.563 2584 Delete type=2 #212
+2023/12/25-23:51:35.563 2584 Delete type=2 #213
+2023/12/25-23:51:35.563 2584 Delete type=2 #214
+2023/12/25-23:51:35.563 2584 Delete type=2 #215
+2023/12/25-23:51:35.563 2584 Delete type=2 #216
+2023/12/25-23:51:35.563 2584 Delete type=2 #218
